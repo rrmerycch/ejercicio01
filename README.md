@@ -2,19 +2,6 @@
 
 ---
 
-# 📂 ESTRUCTURA DEL PROYECTO
-
-Dentro de la carpeta raíz crear la siguiente estructura:
-
-```text
-ejercicio_01/
-│
-├── index.html
-└── README.md
-```
-
----
-
 # 🌐 ¿QUÉ ES LA ESTRUCTURA FUNDAMENTAL EN HTML?
 
 La estructura fundamental es la base obligatoria de toda página web.  
