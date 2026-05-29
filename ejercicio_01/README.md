@@ -1,17 +1,6 @@
 # 📘 ESTRUCTURA FUNDAMENTAL, SEMÁNTICA Y JERARQUIA DE TEXTO EN HTML
-
----
-
 # 📂 ESTRUCTURA DEL PROYECTO
 
-Dentro de la carpeta raíz crear la siguiente estructura:
-
-```text
-ejercicio_01/
-│
-├── index.html
-└── README.md
-```
 
 ---
 

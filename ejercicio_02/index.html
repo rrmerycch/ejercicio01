@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon Vista</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eaeded;
+}
+
+/* HEADER */
+
+header{
+    background:#131921;
+    color:white;
+}
+
+.top-bar{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:10px 20px;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    color:#ff9900;
+}
+
+.location{
+    font-size:14px;
+}
+
+.search{
+    flex:1;
+    display:flex;
+}
+
+.search select{
+    padding:10px;
+    border:none;
+}
+
+.search input{
+    width:100%;
+    padding:10px;
+    border:none;
+    outline:none;
+}
+
+.search button{
+    background:#febd69;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+.menu-right{
+    display:flex;
+    gap:20px;
+    font-size:14px;
+}
+
+/* NAV */
+
+nav{
+    background:#232f3e;
+    color:white;
+    padding:10px 20px;
+    display:flex;
+    gap:25px;
+    font-size:15px;
+}
+
+/* HERO */
+
+.hero{
+    margin:20px auto;
+    width:90%;
+    height:300px;
+    background:linear-gradient(90deg,#5d00ff,#8b2fff);
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:22px;
+}
+
+/* PRODUCTS */
+
+.products{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    border-radius:5px;
+}
+
+.card h2{
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    margin-bottom:10px;
+}
+
+.card a{
+    text-decoration:none;
+    color:#007185;
+    font-size:14px;
+}
+
+/* SMALL CARDS */
+
+.small-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+
+.small-grid img{
+    height:120px;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:40px;
+    background:#232f3e;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:1000px){
+
+.products{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:700px){
+
+.top-bar{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.products{
+    grid-template-columns:1fr;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="top-bar">
+
+        <div class="logo">amazon</div>
+
+        <div class="location">
+            Enviar a <br>
+            <strong>Perú</strong>
+        </div>
+
+        <div class="search">
+            <select>
+                <option>Todas</option>
+            </select>
+
+            <input type="text" placeholder="Buscar en Amazon">
+
+            <button>🔍</button>
+        </div>
+
+        <div class="menu-right">
+            <div>Cuenta y listas</div>
+            <div>Pedidos</div>
+            <div>🛒 Carrito</div>
+        </div>
+
+    </div>
+
+    <nav>
+        <div>☰ Todo</div>
+        <div>Prime Video</div>
+        <div>Servicio al Cliente</div>
+        <div>Ofertas</div>
+        <div>Vender</div>
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <div>
+        <h1>Gana hasta 35% de descuento</h1>
+        <p>Promociones increíbles todos los días</p>
+    </div>
+
+</section>
+
+<section class="products">
+
+    <div class="card">
+        <h2>Mejora tu juego</h2>
+
+        <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?q=80&w=1200" alt="">
+
+        <a href="#">Compra videojuegos</a>
+    </div>
+
+    <div class="card">
+        <h2>Envío gratis a Perú</h2>
+
+        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200" alt="">
+
+        <a href="#">Más información</a>
+    </div>
+
+    <div class="card">
+        <h2>Ahorra en moda</h2>
+
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200" alt="">
+
+        <a href="#">Descubre más</a>
+    </div>
+
+    <div class="card">
+        <h2>Imprescindibles</h2>
+
+        <div class="small-grid">
+
+            <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200" alt="">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200" alt="">
+            <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df?q=80&w=1200" alt="">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200" alt="">
+
+        </div>
+
+        <br>
+
+        <a href="#">Ver productos</a>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Amazon Clone</p>
+</footer>
+
+</body>
+</html>

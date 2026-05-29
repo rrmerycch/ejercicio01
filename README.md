@@ -1,25 +1,57 @@
-#css(cascading style sheet)
-cascada de hojas de estilo, es el documento que nos permite darle estilo a nuestros elementos,
-posicionar, escalar, color y transcisiones.
+# CSS (Cascading Style Sheets)
 
-##maneras de aplicar css a nuestro documento html
-### 1. en linea
-este manera de aplicar css es haciendo uso de atributos de un elemento
-en este caso especial usando el atributo ´style´
+CSS es un lenguaje que nos permite dar estilos a nuestros elementos HTML, como colores, tamaños, posiciones, escalas, formatos y transiciones.
 
-´´´
-<p style > este es el texto </p>
+---
 
+# Maneras de aplicar CSS a nuestro documento HTML
 
-<> tip
-en el caso de lo eembebidos y los de archivo externo hay que entender osbre
-selectores: son manera de como yo identifico un elemento dentro de un docoumento html
-selector por etiqueta, id y clase en el diseño web se recomienda solo usar los
-selectores de tipo clase
-### 2. embebidos
+## 1. En línea
 
-este tipo de aplicar estilo nos permite hacer uso de la etiqueta style para poder
-stiñar nuestros elemento, por convencio esta etiqueta al ser de configuracion
-se debe usar en 
+Esta manera de aplicar CSS consiste en usar el atributo `style` directamente dentro de una etiqueta HTML.
 
-### 3.archivo externo
+```html
+<p style="color:pink; font-size:23px;">
+    Este es el texto
+</p>
+```
+
+---
+
+## 2. Embebido
+
+Este tipo de CSS permite usar la etiqueta `<style>` dentro del documento HTML para aplicar estilos.
+
+Por convención, la etiqueta `<style>` se coloca dentro de la etiqueta `<head>`.
+
+```html
+<head>
+    <style>
+        p{
+            color: blue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+```
+
+---
+
+## 3. Archivo externo
+
+Este método consiste en crear un archivo `.css` separado y enlazarlo al documento HTML mediante la etiqueta `<link>`.
+
+```html
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+```
+
+### Archivo `style.css`
+
+```css
+p{
+    color:red;
+    font-size:22px;
+}
+```
